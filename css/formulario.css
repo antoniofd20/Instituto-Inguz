@@ -1,0 +1,389 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #e6e4e4;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Comfortaa', cursive;
+}
+
+label {
+    font-size: .8em;
+}
+
+@media (min-width: 1007px){
+    .container {
+        position: absolute;
+        margin: 100px 5% 0 5%;
+        padding: 10px 0 10px 0;
+        /*border: 1px solid red;*/
+        width: 90%;
+        z-index: 500;
+    }
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+    }
+    .formulario {
+        padding: 10px;
+    }
+    .form-group-blue {
+        display: flex;
+        background: #35538b5b;
+        padding: 5px;
+    }
+
+    /* DISTINTOS ANCHOS PARA FORMUARIOS */
+    .matricula {width: 80px;}
+    .nombre{width: 200px;}
+    .numero{width: 100px;}
+    .largo{width: 300px}
+    .input{
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        border-bottom: 2px solid #1e3661;
+        outline: none;
+        text-align: center;
+
+        /**/
+        font-size: .8rem;
+    }
+    .input:focus .input:active {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .date{
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        border-bottom: 2px solid #1e3661;
+        outline: none;
+        text-align: center;
+
+        /**/
+        font-size: .8rem;
+    }
+    .date:focus .date:active {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    select {
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        border-bottom: 2px solid #1e3661;
+    }
+    select:focus {
+        outline: none;
+    }
+
+    .form-group {
+        display: flex;
+        background: transparent;
+        padding: 5px;
+        padding-top: 7px;
+    }
+    .form-col-2 {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    .form-col-3 {
+        display: flex;
+        width: 33%;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+        /*border: 1px solid red;*/
+    }
+    .form-col-4 {
+        display: flex;
+        width: 25%;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 10px;
+        /*border: 1px solid red;*/
+    }
+    .final {
+        display: flex;
+        justify-content: space-between;
+    }
+    .submit {
+        margin: 0 0 0 auto;
+        padding: 10px;
+        background: #1e3561;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+    .submit:hover, .submit-prof:hover{
+        background: #16294d;
+        cursor: pointer;
+    }    
+    .submit-prof {
+        margin: 0 auto 0 auto;
+        padding: 10px;
+        background: #1e3561;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+@media (min-width: 616px) and (max-width: 1006px){
+    .container {
+        position: absolute;
+        margin: 130px 5% 0 5%;
+        padding: 10px 0 10px 0;
+        /*border: 1px solid red;*/
+        width: 90%;
+        z-index: 500;
+    }
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+    }
+    .formulario {
+        padding: 5px;
+    }
+    .form-group-blue {
+        display: flex;
+        background: transparent;
+        padding: 5px;
+    }
+    .form-group {
+        display: flex;
+        background: transparent;
+        padding: 5px;
+        padding-top: 7px;
+    }
+
+    /* DISTINTOS ANCHOS PARA FORMUARIOS */
+    .matricula {width: 80px;}
+    .nombre{width: 100px;}
+    .numero{width: 100px;}
+    .largo{width: 200px}
+    .label {
+        display: inline-block;
+        width: 100%;
+        /*border: 1px solid yellow;*/
+    }
+    .input{
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        border-bottom: 2px solid #1e3661;
+        outline: none;
+        text-align: center;
+
+        /**/
+        font-size: .8rem;
+        display: inline;
+        /*border: 1px solid green;*/
+    }
+    .input:focus .input:active {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    select {
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        border-bottom: 2px solid #1e3661;
+    }
+    select:focus {
+        outline: none;
+    }
+    .form-col-2 {
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    .form-col-3 {
+        
+        width: 33%;
+        height: 100px;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+        /*border: 1px solid red;*/
+    }
+    .form-col-4 {
+        display: flex;
+        width: 25%;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 10px;
+        /*border: 1px solid red;*/
+    }
+    .final {
+        display: flex;
+        justify-content: space-between;
+    }
+    .submit {
+        margin: 0 0 0 auto;
+        padding: 10px;
+        background: #1e3561;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+    .submit:hover, .submit-prof:hover{
+        background: #16294d;
+        cursor: pointer;
+    }    
+    .submit-prof {
+        margin: 0 auto 0 auto;
+        padding: 10px;
+        background: #1e3561;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+@media (max-width: 615px){
+    .container {
+        position: absolute;
+        margin: 130px 5% 0 5%;
+        padding: 10px 0 10px 0;
+        /*border: 1px solid red;*/
+        width: 90%;
+        z-index: 500;
+    }
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+    }
+    .formulario {
+        padding: 5px;
+    }
+    .form-group-blue {
+        background: transparent;
+        padding: 5px;
+        /*border:1px solid red;*/
+    }
+    .form-group {
+        background: transparent;
+        padding: 5px;
+        padding-top: 7px;
+    }
+
+    /* DISTINTOS ANCHOS PARA FORMUARIOS */
+    .matricula {width: 80px;}
+    .nombre{width: 100px;}
+    .numero{width: 100px;}
+    .largo{width: 200px}
+    .label {
+        width: 50%;
+        /*border: 1px solid yellow;*/
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .input{
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        border-bottom: 2px solid #1e3661;
+        outline: none;
+        text-align: center;
+
+        /**/
+        font-size: .8rem;
+        display: inline-block;
+        /*border: 1px solid green;*/
+    }
+    .input:focus .input:active {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    select {
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        border-bottom: 2px solid #1e3661;
+    }
+    select:focus {
+        outline: none;
+    }
+    .form-col-2 {
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    .form-col-3 {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 40px;
+        /*border: 1px solid red;*/
+    }
+    .form-col-4 {
+        display: flex;
+        width: 50%;
+        justify-content:space-between;
+        align-items: center;
+        padding-left: 10px;
+        /*border: 1px solid red;*/
+    }
+    .final {
+        display: flex;
+        justify-content: space-between;
+    }
+    .submit {
+        margin: 0 auto 0 auto;
+        padding: 10px;
+        background: #1e3561;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+    .submit:hover, .submit-prof:hover{
+        background: #16294d;
+        cursor: pointer;
+    }
+    .submit-prof {
+        margin: 0 auto 0 auto;
+        padding: 10px;
+        background: #1e3561;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        
+    }
+    .checkbox {
+        margin-right: 30px;
+    }  
+}

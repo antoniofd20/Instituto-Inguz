@@ -1,0 +1,24 @@
+td input {
+    background: transparent;
+    border: none;
+    padding: 2px;
+    text-align: right;
+    outline: none;
+    border: 1px solid #2f528f67;
+    border-radius: 5px;
+}
+
+td input:focus{
+    outline: none;
+    border: 2px solid #2f528f;
+    border-radius: 5px;
+}
+
+.submit {
+    float: right;
+    background: seagreen;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}

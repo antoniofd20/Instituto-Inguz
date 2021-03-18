@@ -1,0 +1,157 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Comfortaa', cursive;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Comfortaa', cursive;
+  }
+
+header {
+    /*border: 1px solid red;*/
+    width: 80%;
+    margin: 5px 10% 5px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+header,
+footer {
+  width: 80%;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+
+.cont{
+    width: 80%;
+    margin: 100px auto 100px 17%;
+    /*border:1px solid red;*/
+    background: #F2F3F4;
+  }
+
+.logo {
+    position: absolute;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.a-regresar{
+    position: absolute;
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 90vw;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #2f528f;
+    margin-top: 20px;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor {
+    /*border: 1px solid red;*/
+    width: 90%;
+    margin: 30px 5% 30px 5%;
+    
+    
+}
+
+.renglon {
+    /*border: 1px solid yellow;*/
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+    display: inline-block;
+    justify-content: center;
+    padding: 50px 0px;
+    background: #F2F3F4;
+}
+
+.columna {
+    /*border: 1px solid green;*/
+    background: #F2F3F4;
+    border-bottom: 1px solid grey;
+    list-style: none;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.columna a {
+    text-decoration: none;
+}
+
+.columna a .icono_3{
+    margin-right: 20px;
+}
+
+.ingresos {
+    color: green;
+}
+.renglon .ingresos:hover {
+    color: green;
+    background: rgba(0, 128, 0, 0.253);
+    box-shadow: 0 12px 16px green;
+    border-radius: 7px;
+    transform: translateY(-5px);
+}
+
+.adeudos {
+    color: red;
+    width: 100%;
+}
+.renglon .adeudos:hover {
+    color: red;
+    background: rgba(255, 0, 0, 0.363);
+    box-shadow: 0 12px 16px red;
+    border-radius: 7px;
+    transform: translateY(-5px);
+}
+
+.meta {
+    color: rgb(255, 187, 0);
+}
+.renglon .meta:hover {
+    color: rgb(255, 187, 0);
+    background: rgba(255, 217, 0, 0.4);
+    box-shadow: 0 12px 16px yellow;
+    border-radius: 7px;
+    transform: translateY(-5px);
+}
+
+.pagos {
+    color: blue;
+    width: 100%;
+}
+.renglon .pagos:hover {
+    color: blue;
+    background: rgba(0, 0, 255, 0.418);
+    box-shadow: 0 12px 16px blue;
+    border-radius: 7px;
+    transform: translateY(-5px);
+}
+
+@media (max-width:1164px){
+    .logo {display: none;}
+    .cont{margin: 80px auto 50px auto;}
+}

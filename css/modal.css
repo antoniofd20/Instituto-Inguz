@@ -1,0 +1,80 @@
+.tabla-consulta-modal {
+    width: 100%;;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+
+.titulo_modal_2 {
+    text-align: center;
+    background: #2f528f;
+    padding: 10px 0px;
+    color: white;
+}
+
+thead th{
+    text-align: center;
+    /*border: 1px solid grey;*/
+}
+
+tr td{
+    padding: 10px 0px;
+    text-align: center;
+    /*border: 1px solid grey;*/
+}
+
+input {
+    text-align: center;
+}
+
+select {
+    text-align-last: center;
+}
+
+.submit_2{
+    width: 90%;
+}
+
+.renglon-modal {
+    /*border: 1px solid red;*/
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.col-8_2 {
+    width: 80%;
+}
+
+.col-2_2 {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.col-4_2 {
+    width: 40%;
+}
+
+/* RENGLON FLEX PARA ICONOS */
+.flex {
+    display: flex;
+}
+
+/* ICONOS PARA EXPORTAR A DOCUMENTOS */
+.exportar {
+    margin: 0px 0px 0px auto;
+    /*border: 1px solid red;*/
+}
+
+.icono-flex {
+    margin: 10px 15px;
+    font-size: 2.5em;
+}
+
+/* COLORES PARA ICONOS DE DOCUMENTOS */
+.agregar-icono {color: blue;}
+.agregar-icono:hover {color: rgb(0, 0, 165);}
+.pdf {color: red;}
+.pdf:hover {color: rgb(148, 0, 0);}
+.excel {color: green;}
+.excel:hover {color: rgb(0, 78, 0);}
+.editar-icono{color:#ee9923}
+.editar-icono:hover{color:#975a05}

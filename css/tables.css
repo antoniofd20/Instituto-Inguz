@@ -1,0 +1,539 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e4e4;
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+}
+
+@media (min-width:1060px){
+    /* CONTENIDO TABLA */
+    .cont {
+        position: absolute;
+        margin: 110px auto 100px 17%;
+        padding: 20px 20px;
+        width: 80%;
+        height: calc(100% - 150px);
+        background: rgb(202, 202, 202);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        border-bottom: 4px solid #2f528f;
+
+        display: flex;
+        z-index: 500;
+    }
+
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .nuevo {
+        position: absolute;
+        margin-left: 85%;
+        padding: 8px;
+        border-radius: 5px;
+        background: none;
+    }
+
+    .plus {
+        color: #34ac4e;
+    }
+
+    .lapiz {
+        color: rgb(255, 196, 0);
+    }
+
+    .plus:hover {
+        color: #29833d;
+    }
+
+    .lapiz:hover {
+        color:  rgb(209, 164, 16);
+    }
+
+    /* ESTILOS PARA FORMULARIO */
+    .filtrar {
+        position:absolute;
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .formulario{
+        
+        padding: 10px 0px;
+    }
+
+    .input {
+        padding: 5px 5px;
+        border-radius: 5px;
+        border: 1px solid #2f528f;
+        margin-right: 5px;
+    }
+
+    .input:focus {
+        border: 2px solid #11213d;
+    }
+
+    .boton {
+        padding: 7px 7px;
+        background: #2f528f;
+        color:rgb(255, 255, 255);
+        border-radius: 3px;
+        border: none;
+    }
+
+    .boton:hover {
+        background: #1e3661;
+        cursor: pointer;
+    }
+
+    .tabla {
+        position: absolute;
+        width: 95%;
+        /* border: 1px solid red; */
+        margin-left: 10px;
+        margin-top: 130px;
+        display: block;
+    }
+
+    .tabla .default thead th {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .8rem;
+        background: #2f528f;
+        color: #fff;
+        text-align: center;
+    }
+
+    .tabla .default tr td {
+        padding: 2px 0 2px 0;
+        font-size: .8rem;
+        text-align: center;
+        /*border-bottom: 1px solid #000;*/
+    }
+
+    .tabla .default tr .nombre {
+        font-size: .8rem;
+        text-align: left;
+        /*border-bottom: 1px solid #000;*/
+    }
+
+    .acciones {
+        color: #000;
+        margin-right: 10px;
+    }
+
+    .acciones:hover {
+        color: #2f528f;
+    }
+
+    .default tr:nth-child(odd){
+        background-color: rgb(177, 191, 206);
+        background-color: rgba(138, 159, 181, .25);
+    }
+    
+    .default tr:nth-child(even){
+        background-color: rgb(148, 154, 161);
+    }
+    
+    .default tr:hover{
+        background-color: rgb(138, 159, 181);
+        background-color: rgb(138, 159, 181);
+        /* background-color: rgba(0,0,0, .25); */
+    }
+}
+
+
+@media (min-width:616px) and (max-width:1059px){
+        /* CONTENIDO TABLA */
+    .cont {
+        position: absolute;
+        margin: 110px auto 100px 5%;
+        padding: 40px 20px;
+        width: 90%;
+        height: calc(100%);
+        background: rgb(202, 202, 202);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        border-bottom: 4px solid #2f528f;
+
+        display: flex;
+        z-index: 500;
+    }
+
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .nuevo {
+        position: absolute;
+        margin-left: 85%;
+        padding: 8px;
+        border-radius: 5px;
+        background: none;
+        
+    }
+
+    .plus {
+        color: #34ac4e;
+    }
+
+    .plus:hover {
+        color: #29833d;
+    }
+
+    /* ESTILOS PARA FORMULARIO */
+    .filtrar {
+        position:absolute;
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .formulario{
+        
+        padding: 10px 0px;
+    }
+
+    .input {
+        padding: 5px 5px;
+        border-radius: 5px;
+        border: 1px solid #2f528f;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .input:focus {
+        border: 2px solid #11213d;
+    }
+
+    .boton {
+        padding: 7px 7px;
+        background: #2f528f;
+        color:rgb(255, 255, 255);
+        border-radius: 3px;
+        border: none;
+    }
+
+    .boton:hover {
+        background: #1e3661;
+        cursor: pointer;
+    }
+
+    .tabla {
+        position: absolute;
+        width: 90%;
+        /* border: 1px solid red; */
+        margin-left: 10px;
+        margin-top: 160px;
+        display: block;
+    }
+
+    .tabla .default thead th {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .8rem;
+        background: #2f528f;
+        color: #fff;
+        text-align: center;
+    }
+
+    .tabla .default tr td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .8rem;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+
+    .acciones {
+        color: #000;
+        margin-right: 0;
+    }
+
+    .acciones:hover {
+        color: #335ba5;
+    }
+}
+
+@media (min-width:485px) and (max-width:615px){
+    /* CONTENIDO TABLA */
+    .cont {
+        position: absolute;
+        margin: 100px 0 100px 0;
+        padding: 40px 0px;
+        width: 100%;
+        height: calc(100%);
+        background: #e6e4e4;
+    
+        display: flex;
+        z-index: 500;
+    }
+    
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 20px;
+    }
+    
+    .nuevo {
+        position: absolute;
+        margin-left: 85%;
+        padding: 8px;
+        border-radius: 5px;
+        background: none;
+        
+    }
+    
+    .plus {
+        color: #34ac4e;
+    }
+    
+    .plus:hover {
+        color: #29833d;
+    }
+    
+    /* ESTILOS PARA FORMULARIO */
+    .filtrar {
+        position:absolute;
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+    
+    .formulario{
+        
+        padding: 10px 0px;
+    }
+    
+    .input {
+        padding: 3px 3px;
+        border-radius: 5px;
+        border: 1px solid #2f528f;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .input:focus {
+        border: 2px solid #11213d;
+    }
+    
+    .boton {
+        padding: 3px 3px;
+        background: #2f528f;
+        color:rgb(255, 255, 255);
+        border-radius: 3px;
+        border: none;
+    }
+    
+    .boton:hover {
+        background: #1e3661;
+        cursor: pointer;
+    }
+    
+    .tabla {
+        position: absolute;
+        width: 100%;
+        /*border: 1px solid red; */
+        margin-top: 160px;
+        display: block;
+    }
+    
+    .tabla .default thead th {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .6rem;
+        background: #2f528f;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .tabla .default tr td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .65rem;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+    
+    .acciones {
+        color: #000;
+        margin-right: 0;
+    }
+    
+    .acciones:hover {
+        color: #335ba5;
+    }
+}
+
+@media (min-width:300px) and (max-width:484px){
+    /* CONTENIDO TABLA */
+    .cont {
+        position: absolute;
+        margin: 100px 0 100px 0;
+        padding: 40px 0px;
+        width: 100%;
+        height: calc(100%);
+        background: #e6e4e4;
+    
+        display: flex;
+        z-index: 500;
+    }
+    
+    .titulo {
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#1e3661;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 20px;
+    }
+    
+    .nuevo {
+        position: absolute;
+        margin-left: 80%;
+        padding: 8px;
+        border-radius: 5px;
+        background: none;
+        
+    }
+    
+    .plus {
+        color: #34ac4e;
+    }
+    
+    .plus:hover {
+        color: #29833d;
+    }
+    
+    /* ESTILOS PARA FORMULARIO */
+    .filtrar {
+        position:absolute;
+        width: 90%;
+        
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+    
+    .formulario{
+        
+        padding: 10px 0px;
+    }
+    
+    .input {
+        width: 40%;
+        padding: 3px 3px;
+        border-radius: 5px;
+        border: 1px solid #2f528f;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .input:focus {
+        border: 2px solid #11213d;
+    }
+    
+    .boton {
+        padding: 3px 3px;
+        background: #2f528f;
+        color:rgb(255, 255, 255);
+        border-radius: 3px;
+        border: none;
+    }
+    
+    .boton:hover {
+        background: #1e3661;
+        cursor: pointer;
+    }
+    
+    .tabla {
+        position: absolute;
+        width: 100%;
+        /*border: 1px solid red; */
+        margin-top: 190px;
+        display: block;
+    }
+    
+    .tabla .default thead th {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .6rem;
+        background: #2f528f;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .tabla .default tr td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: .6rem;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+    
+    .acciones {
+        color: #000;
+        margin-right: 0;
+    }
+    
+    .acciones:hover {
+        color: #335ba5;
+    }
+}
+
+.paginacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.paginacion ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.paginacion ul .active a {
+    padding: 5px 8px;
+    background: #375fa5;
+}
+
+.paginacion ul .disabled {
+    padding: 5px 8px;
+    background: #c8c8c8;
+    display: inline-block;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    cursor: not-allowed;
+    color: #fff;
+    text-decoration: none;
+}
+
+.paginacion ul li a {
+    padding: 5px 8px;
+    background: #11213d;
+    display: inline-block;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+    text-decoration: none;
+    background: #3299bb;
+}
